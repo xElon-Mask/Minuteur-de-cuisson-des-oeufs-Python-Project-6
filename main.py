@@ -22,7 +22,8 @@ Et toutes les 10 secondes vous irez à la ligne suivante en affichant le temps r
     sec = d-min*60
 """
 import time
-import beepy
+import platform
+import winsound
 
 ONE_MINUTE_IN_SECONDS = 60
 
@@ -67,4 +68,15 @@ else:
 
 print("\n")
 print("Cuisson terminée !")
+
+if platform.system() == "Windows":
+ 
+    # Tu peux varier la féquence (aigue -> grave)
+    frequency = 500
+    duration = 500
+    winsound.Beep(frequency, duration)
+
+# Si le script n'est pas exécuté sous windows 
+else:
+    print("Driiiiiiiiiiiing!!!")
 
