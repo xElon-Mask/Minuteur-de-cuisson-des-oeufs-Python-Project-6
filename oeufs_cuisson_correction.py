@@ -1,3 +1,5 @@
+import time
+
 # 1ere chose a faire :afficher le menu de cuisson des oeufs
 print("Cuisson des oeufs")
 print("1 - Oeufs à la coque : 3 minutes")
@@ -14,3 +16,9 @@ if choix == "3":
     duree = 9 * 60
 
 
+# Ne sachant pas encore sur quelle condition bouclée, on commence la réflexion algorithmique 
+# avec while True:
+
+while True:
+    time.sleep(1)
+    print(".", end="", flush=True)
