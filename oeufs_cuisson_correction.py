@@ -22,9 +22,18 @@ if choix == "3":
 while True:
     for i in range(10):
         time.sleep(1)
-        duree -= 1
         print(".", end="", flush=True)
+        duree -= 1
+        if duree <= 0:
+            break
+        
 
+    if duree <= 0:
+        break
     min = duree // 60 # division entière (pas de virgule)
     sec = duree - min * 60
+    print()
     print(f"Temps restant : {min:02d} : {sec:02d}")
+
+print()
+print("Cuisson terminée")
