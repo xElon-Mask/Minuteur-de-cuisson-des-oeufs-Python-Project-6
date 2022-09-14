@@ -5,4 +5,12 @@ print("2 - Oeufs à la coque : 6 minutes")
 print("3 - Oeufs à la coque : 9 minutes")
 choix = input("Votre choix: ")
 
+duree = 0
+if choix == "1":
+    duree = 3 * 60
+if choix == "2":
+    duree = 6 * 60
+if choix == "3":
+    duree = 9 * 60
+
 
